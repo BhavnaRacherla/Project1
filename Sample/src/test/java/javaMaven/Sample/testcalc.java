@@ -16,14 +16,19 @@ public class testcalc {
 		System.out.println("4.Divide");
 		System.out.println("Enter choice");
 		c=s.nextInt();
-		System.out.println("enter first operator");
+		if(c<1 && c>4) {
+			System.out.println("Invalid input");
+		}
+		else {
+		System.out.println("enter first operand");
 		a=s.nextInt();
-		System.out.println("enter second operator");
+		System.out.println("enter second operand");
 		b=s.nextInt();
 		int[] result= {
 				a+b,a-b,a*b,a/b
 		};
 		System.out.println("Result is "+result[c-1]);
+	}
 	}
 
 }
