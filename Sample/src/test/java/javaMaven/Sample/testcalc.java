@@ -16,7 +16,7 @@ public class testcalc {
 		System.out.println("4.Divide");
 		System.out.println("Enter choice");
 		c=s.nextInt();
-		if(c<1 && c>4) {
+		if(c<1 || c>4) {
 			System.out.println("Invalid input");
 		}
 		else {
